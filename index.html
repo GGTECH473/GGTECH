@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GGTECH - Setup Gamer de Verdade</title>
+<meta name="description" content="GGTECH - Loja online de periféricos gamer e tecnologia. Teclados, mouses e fones com os melhores preços. Entrega em até 12 dias.">
+<meta property="og:title" content="GGTECH - Setup Gamer de Verdade">
+<meta property="og:description" content="Periféricos gamer premium com entrega rápida e garantia.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <div class="nav-top"><span>🚚 FRETE GRÁTIS para todo o Brasil</span></div>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="https://ggtech473.github.io/GGTECH/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/ggtech-logo.png" alt="GGTECH" style="height:2.5rem;width:auto">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link">Início</a>
+        <a href="#produtos" class="nav-link">Produtos</a>
+        <a href="#ofertas" class="nav-link">Ofertas</a>
+        <a href="#combos" class="nav-link">Combos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:0.75rem">
+        <a href="https://ggtech473.github.io/GGTECH/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:none" id="navCta">Comprar Agora</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><i data-lucide="menu" style="width:1.5rem;height:1.5rem"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mobile-link" onclick="closeMobile()">Início</a>
+    <a href="#produtos" class="mobile-link" onclick="closeMobile()">Produtos</a>
+    <a href="#ofertas" class="mobile-link" onclick="closeMobile()">Ofertas</a>
+    <a href="#combos" class="mobile-link" onclick="closeMobile()">Combos</a>
+    <a href="#contato" class="mobile-link" onclick="closeMobile()">Contato</a>
+    <a href="https://ggtech473.github.io/GGTECH/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:flex;align-items:center;justify-content:center;margin-top:0.75rem;width:100%">Ir para a Loja</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-bg.jpg" alt="Setup gamer" width="1920" height="1080">
+    <div class="hero-overlay1"></div>
+    <div class="hero-overlay2"></div>
+    <div class="hero-glow"></div>
+  </div>
+  <div class="hero-content container">
+    <div class="animate-fade-up">
+      <div class="hero-badge">
+        <span class="dot"><span class="dot-ping animate-ping"></span><span class="dot-solid"></span></span>
+        <span style="font-size:0.75rem;font-weight:600;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em">Promoção ativa — Estoque limitado</span>
+      </div>
+      <h1 class="orbitron">
+        <span>Setup gamer</span><br>
+        <span>de verdade </span>
+        <span class="text-gradient">começa aqui.</span>
+      </h1>
+      <p class="hero-desc">Periféricos premium com os melhores preços. Entrega para todo o Brasil em até 12 dias e reembolso garantido em até 7 dias.</p>
+      <div class="hero-btns">
+        <a href="https://ggtech473.github.io/GGTECH/" target="_blank" rel="noopener noreferrer" class="hero-btn hero-btn-primary">Ver Produtos <i data-lucide="arrow-right" style="width:1.25rem;height:1.25rem"></i></a>
+        <a href="#ofertas" class="hero-btn hero-btn-outline">Ofertas do Dia</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-icon"><i data-lucide="star" style="width:1.25rem;height:1.25rem;color:var(--primary);fill:var(--primary)"></i></div>
+          <div><p style="font-size:1.125rem;font-weight:900">4.9★</p><p style="font-size:0.75rem;color:var(--muted-fg)">Avaliação média</p></div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon"><i data-lucide="truck" style="width:1.25rem;height:1.25rem;color:var(--primary)"></i></div>
+          <div><p style="font-size:1.125rem;font-weight:900">Brasil</p><p style="font-size:0.75rem;color:var(--muted-fg)">Entrega nacional</p></div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon"><i data-lucide="shield" style="width:1.25rem;height:1.25rem;color:var(--primary)"></i></div>
+          <div><p style="font-size:1.125rem;font-weight:900">500+</p><p style="font-size:0.75rem;color:var(--muted-fg)">Clientes satisfeitos</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="section">
+  <div class="section-glow" style="top:0;right:0;background:rgba(224,96,0,0.05)"></div>
+  <div class="container" style="position:relative">
+    <div class="section-header reveal">
+      <div class="section-badge"><i data-lucide="trending-up"></i><span>Em Alta</span></div>
+      <h2 class="section-title orbitron">Nossos <span class="text-gradient">Produtos</span></h2>
+      <p class="section-desc">Periféricos selecionados para elevar sua gameplay ao próximo nível</p>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- OFERTAS -->
+<section id="ofertas" class="section offers-section">
+  <div class="offers-bg"></div>
+  <div class="container" style="position:relative">
+    <div class="section-header reveal">
+      <div class="section-badge animate-glow-pulse"><i data-lucide="zap"></i><span>Ofertas Limitadas</span></div>
+      <h2 class="section-title orbitron">Ofertas <span class="text-gradient">Imperdíveis</span></h2>
+      <div style="margin-top:1rem;display:inline-flex;align-items:center;gap:0.5rem;color:var(--muted-fg)">
+        <i data-lucide="clock" style="width:1rem;height:1rem"></i><span style="font-size:0.875rem">Promoção por tempo limitado — aproveite!</span>
+      </div>
+    </div>
+    <div class="offers-grid" id="offersGrid"></div>
+  </div>
+</section>
+
+<!-- COMBOS -->
+<section id="combos" class="section">
+  <div class="section-glow" style="top:0;left:33%;background:rgba(224,96,0,0.05)"></div>
+  <div class="container" style="position:relative">
+    <div class="section-header reveal">
+      <div class="section-badge"><i data-lucide="package"></i><span>Combos Especiais</span></div>
+      <h2 class="section-title orbitron">Kits <span class="text-gradient">Gamer</span></h2>
+      <p class="section-desc">Monte seu setup completo e economize comprando em combo</p>
+    </div>
+    <div class="combos-grid" id="combosGrid"></div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="section">
+  <div class="section-glow" style="bottom:0;left:0;background:rgba(224,96,0,0.05)"></div>
+  <div class="container" style="position:relative">
+    <div class="section-header reveal">
+      <h2 class="section-title orbitron">Por Que Escolher <span class="text-gradient">GGTECH</span>?</h2>
+      <p class="section-desc">Compromisso com qualidade, segurança e a melhor experiência de compra</p>
+    </div>
+    <div class="benefits-grid" id="benefitsGrid"></div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="section reviews-section">
+  <div class="reviews-bg"></div>
+  <div class="container" style="position:relative">
+    <div class="section-header reveal">
+      <h2 class="section-title orbitron">O que nossos <span class="text-gradient">clientes</span> dizem</h2>
+      <p class="section-desc">Avaliações reais de quem já comprou na GGTECH</p>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid"></div>
+  </div>
+</section>
+
+<!-- TRUST POLICIES -->
+<section class="section">
+  <div class="section-glow" style="top:0;right:0;background:rgba(224,96,0,0.05)"></div>
+  <div class="container" style="position:relative">
+    <div class="section-header reveal">
+      <div class="section-badge"><i data-lucide="lock"></i><span>Confiança & Segurança</span></div>
+      <h2 class="section-title orbitron">Suas <span class="text-gradient">Garantias</span></h2>
+      <p class="section-desc">Políticas claras para você comprar com total tranquilidade</p>
+    </div>
+    <div class="policies-grid" id="policiesGrid"></div>
+    <div class="trust-banner reveal" id="trustBanner"></div>
+  </div>
+</section>
+
+<!-- REFUND POLICY -->
+<section id="politica" class="section">
+  <div class="section-glow" style="top:0;left:0;background:rgba(224,96,0,0.05)"></div>
+  <div class="container" style="position:relative">
+    <div class="section-header reveal">
+      <div class="section-badge"><i data-lucide="shield"></i><span>Sua Segurança</span></div>
+      <h2 class="section-title orbitron">Política de <span class="text-gradient">Reembolso</span></h2>
+      <p class="section-desc">Sua compra protegida do início ao fim</p>
+    </div>
+    <div class="refund-box reveal">
+      <div class="refund-header">
+        <div class="icon"><i data-lucide="shield" style="width:2rem;height:2rem"></i></div>
+        <div>
+          <h3 style="font-size:1.5rem;font-weight:900;color:var(--fg)">7 Dias de Garantia</h3>
+          <p style="color:var(--muted-fg)">Reembolso total, sem burocracia</p>
+        </div>
+      </div>
+      <div class="refund-steps">
+        <div class="refund-step"><div class="num">1</div><div><h4 style="font-weight:700;color:var(--fg)">Solicite o reembolso</h4><p style="font-size:0.875rem;color:var(--muted-fg);margin-top:0.25rem">Entre em contato conosco em até 7 dias após o recebimento do produto pelo WhatsApp ou e-mail.</p></div></div>
+        <div class="refund-step"><div class="num">2</div><div><h4 style="font-weight:700;color:var(--fg)">Envie o produto de volta</h4><p style="font-size:0.875rem;color:var(--muted-fg);margin-top:0.25rem">Nós fornecemos as instruções e o código de postagem. Sem custo adicional para você.</p></div></div>
+        <div class="refund-step"><div class="num">3</div><div><h4 style="font-weight:700;color:var(--fg)">Receba seu dinheiro</h4><p style="font-size:0.875rem;color:var(--muted-fg);margin-top:0.25rem">Após confirmarmos o recebimento, o reembolso é processado em até 3 dias úteis via Pix.</p></div></div>
+      </div>
+      <div class="refund-badges">
+        <div class="refund-badge"><span class="emoji">✅</span><span>Sem perguntas</span></div>
+        <div class="refund-badge"><span class="emoji">⚡</span><span>Reembolso rápido</span></div>
+        <div class="refund-badge"><span class="emoji">🔒</span><span>100% seguro</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato-info" class="section contact-section">
+  <div class="contact-bg"></div>
+  <div class="container" style="position:relative">
+    <div class="section-header reveal">
+      <div class="section-badge"><i data-lucide="message-circle"></i><span>Fale Conosco</span></div>
+      <h2 class="section-title orbitron">Entre em <span class="text-gradient">Contato</span></h2>
+      <p class="section-desc">Estamos prontos para ajudar você com qualquer dúvida</p>
+    </div>
+    <div class="contact-grid" id="contactGrid"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contato" class="footer">
+  <div class="footer-glow"></div>
+  <div class="container" style="padding-top:4rem;padding-bottom:4rem;position:relative">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/ggtech-logo.png" alt="GGTECH" style="height:3rem;width:auto" loading="lazy">
+        <p class="footer-desc">A GGTECH é referência em periféricos gamer e tecnologia. Produtos premium com preço justo, entrega em até 12 dias para todo o Brasil e reembolso em até 7 dias.</p>
+        <div class="footer-badges">
+          <div class="footer-badge"><i data-lucide="shield"></i><span>Compra Segura</span></div>
+          <div class="footer-badge"><i data-lucide="clock"></i><span>Reembolso 7 dias</span></div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/ggtech.o.f?igsh=MWd6NzMzb2V5Z2Fobg==" target="_blank" rel="noopener noreferrer" class="social-link"><i data-lucide="instagram"></i></a>
+          <a href="https://wa.me/5516994072005" target="_blank" rel="noopener noreferrer" class="social-link"><i data-lucide="message-circle"></i></a>
+          <a href="mailto:contato@ggtech.com.br" class="social-link"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Links Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#combos">Combos</a></li>
+          <li><a href="https://ggtech473.github.io/GGTECH/" target="_blank" rel="noopener noreferrer">Loja Online →</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="clock"></i>Segunda a Sexta: 9h - 18h</li>
+          <li><i data-lucide="clock"></i>Sábados: 9h - 13h</li>
+          <li style="padding-top:0.5rem"><i data-lucide="mail"></i><a href="mailto:contato@ggtech.com.br">contato@ggtech.com.br</a></li>
+          <li><i data-lucide="map-pin"></i>Brasil — Entrega nacional</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GGTECH. Todos os direitos reservados.</p>
+      <div class="footer-payments">
+        <span class="pix">Pix</span><span>•</span><span>Cartão de Crédito</span><span>•</span><span>Boleto</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay hidden" id="productModal">
+  <div class="modal-backdrop" onclick="closeModal()"></div>
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()"><i data-lucide="x"></i></button>
+    <div id="modalDetail">
+      <div class="modal-grid">
+        <div class="modal-img"><img id="modalImg" src="" alt=""></div>
+        <div class="modal-details">
+          <span class="modal-tag" id="modalTag"></span>
+          <h3 class="orbitron" id="modalName" style="font-size:1.5rem;font-weight:900;color:var(--fg)"></h3>
+          <div class="stars" id="modalStars"></div>
+          <p id="modalDesc" style="margin-top:1rem;font-size:0.875rem;color:var(--muted-fg);line-height:1.6"></p>
+          <div class="modal-specs" id="modalSpecs"></div>
+          <div class="modal-price-block">
+            <span class="modal-old-price" id="modalOldPrice"></span>
+            <p class="modal-price" id="modalPrice"></p>
+          </div>
+          <div class="modal-viewers">
+            <span style="display:flex;align-items:center;gap:0.25rem"><i data-lucide="eye"></i><span id="modalViewers"></span> vendo agora</span>
+            <span class="stock-warn" style="color:var(--primary);font-weight:600">⚠️ <span id="modalStock"></span> em estoque</span>
+          </div>
+          <div class="modal-frete"><i data-lucide="truck"></i>Frete Grátis</div>
+          <button class="modal-buy-btn" onclick="showCheckout()"><i data-lucide="shopping-cart"></i>Comprar Agora</button>
+          <div class="modal-guarantees">
+            <span><i data-lucide="truck"></i>Entrega em até 12 dias</span>
+            <span><i data-lucide="shield"></i>Reembolso em até 7 dias</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-reviews" id="modalReviews"></div>
+    </div>
+    <div id="modalCheckout" class="hidden">
+      <div class="checkout-wrap">
+        <h3 class="orbitron" style="font-size:1.5rem;font-weight:900;color:var(--fg);margin-bottom:1.5rem">Finalizar <span class="text-gradient">Pedido</span></h3>
+        <div class="checkout-summary">
+          <img id="checkoutImg" src="" alt="" class="checkout-thumb">
+          <div class="checkout-product-info"><h4 id="checkoutName"></h4><p>Quantidade: 1</p></div>
+          <p class="checkout-price" id="checkoutPrice"></p>
+        </div>
+        <div class="checkout-details">
+          <div class="checkout-row"><span class="label">ID do Pedido</span><span class="value mono" id="checkoutOrderId"></span></div>
+          <div class="checkout-row"><span class="label">Subtotal</span><span class="value" id="checkoutSubtotal"></span></div>
+          <div class="checkout-row"><span class="label">Frete</span><span class="value green" style="color:var(--green);font-weight:600">Grátis</span></div>
+          <div class="checkout-total"><span class="label">Total</span><span class="value" id="checkoutTotal"></span></div>
+        </div>
+        <div class="modal-guarantees" style="margin-bottom:1.5rem">
+          <span><i data-lucide="truck"></i>Entrega em até 12 dias</span>
+          <span><i data-lucide="shield"></i>Reembolso em até 7 dias</span>
+        </div>
+        <form id="checkoutForm" class="checkout-form">
+          <h4><i data-lucide="file-text"></i>Dados para Entrega</h4>
+          <div class="input-group" id="grpNome"><i data-lucide="user"></i><input type="text" placeholder="Nome Completo" id="inpNome" maxlength="100"></div>
+          <div class="input-group" id="grpCpf"><i data-lucide="file-text"></i><input type="text" placeholder="CPF (000.000.000-00)" id="inpCpf"></div>
+          <div class="input-group" id="grpTel"><i data-lucide="phone"></i><input type="text" placeholder="Telefone (00) 00000-0000" id="inpTel"></div>
+          <div class="input-group" id="grpCep"><i data-lucide="map-pin"></i><input type="text" placeholder="CEP (00000-000)" id="inpCep"></div>
+          <div class="input-group" id="grpEnd"><i data-lucide="home"></i><input type="text" placeholder="Endereço completo (rua, número, bairro, cidade)" id="inpEnd" maxlength="200"></div>
+          <button type="submit" class="checkout-submit"><i data-lucide="shopping-cart"></i>Ir para Pagamento</button>
+          <button type="button" class="checkout-back" onclick="hideCheckout()">← Voltar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
