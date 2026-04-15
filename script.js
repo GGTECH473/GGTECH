@@ -15,8 +15,8 @@ const offers = [
 ];
 
 const combos = [
-  {name:"Kit Setup Completo",desc:"Teclado Wireless + Attack Shark X11 + Fone Gamer M25",from:"R$ 619,70",to:"R$ 323,80",save:"Economize R$ 295,90",image:"assets/teclado-wireless.jpg",link:"https://deflow.exchange/pt/pay/c54420ae8ab0f0ca"},
-  {name:"Kit Precisão & Áudio",desc:"Attack Shark X11 + Fone Bluetooth i12 TWS",from:"R$ 279,80",to:"R$ 130,60",save:"Economize R$ 149,20",image:"assets/attack-shark-x11.jpg",link:"https://deflow.exchange/pt/pay/1a339c9d046edd1b"}
+  {name:"Kit Setup Completo",desc:"Teclado Wireless + Attack Shark X11 + Fone Gamer M25",from:"R$ 619,70",to:"R$ 323,80",save:"Economize R$ 295,90",image:"assets/teclado-wireless.jpg",link:"https://deflow.exchange/pay/765af52785190aea"},
+  {name:"Kit Precisão & Áudio",desc:"Attack Shark X11 + Fone Bluetooth i12 TWS",from:"R$ 279,80",to:"R$ 130,60",save:"Economize R$ 149,20",image:"assets/attack-shark-x11.jpg",link:"https://deflow.exchange/pay/6cc014b8a8ce4067"}
 ];
 
 const benefits = [
